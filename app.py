@@ -142,7 +142,7 @@ valid_model_names = [
 ]
 
 # Display the image
-st.image("app/static/banner.png", width=800)
+st.image("banner.png", width=800)
 
 # Create a clickable link over the image
 st.markdown(
