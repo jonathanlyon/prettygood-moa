@@ -141,10 +141,18 @@ valid_model_names = [
     'mixtral-8x7b-32768'
 ]
 
-st.markdown("<a href='https://www.prettygood.agency'><img src='app/static/banner.png' width='800'></a>", unsafe_allow_html=True)
-st.write("---")
+# Display the image
+st.image("app/static/banner.png", width=800)
 
-
+# Create a clickable link over the image
+st.markdown(
+    """
+    <a href="https://www.prettygood.agency" target="_blank">
+        <div style="position: absolute; top: 0; left: 0; width: 800px; height: 100px; z-index: 1;"></div>
+    </a>
+    """,
+    unsafe_allow_html=True
+)
 
 # Initialize session state
 if "messages" not in st.session_state:
